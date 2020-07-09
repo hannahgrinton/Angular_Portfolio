@@ -1,0 +1,48 @@
+@import "../../_globals.scss";
+.content--services {
+    margin-left: 150px;
+    margin-top: 50px;
+    padding: 20px 0 20px 20px;
+    max-width: 1050px;
+    background-color: $transparent-white;
+    border-radius: 10px;
+}
+.skills-title {
+    font-family: $nixie;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+    &__section {
+        padding-right: 15px;
+    }
+    &__title {
+        font-family: $assistant;
+        font-size: 20px;
+    }
+    &__content {
+        font-family: $assistant;
+        font-size: 16px;
+        &__item {
+            margin: 10px;
+            @include display-flex();
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__progress-bar {
+        border: 1px solid $jade;
+        width: 70px;
+        border-radius: 5px;
+        &__progress {
+            border-radius: 5px 0 0 5px;
+            background: $jade;
+            height: 8px;
+            background: linear-gradient(to right, $sage, $jade);
+        }
+    }
+}

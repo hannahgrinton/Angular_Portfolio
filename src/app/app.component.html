@@ -1,21 +1,30 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="nav">
+  <div class="nav-item">
+    <img src="assets/flower.png" class="nav-item-icon">
+  </div>
+  <div class="nav-item">
+    <a [routerLink]="['/home']"><i class="fas fa-home"></i><span class="nav-item__text" id="homeLink">Home</span></a>
+  </div>
+  <div class="nav-item">
+    <a [routerLink]="['/about']"><i class="fas fa-user"></i><span class="nav-item__text" id="aboutLink">About</span></a>
+  </div>
+  <div class="nav-item">
+    <a [routerLink]="['/skills']"><i class="fas fa-code-branch"></i><span class="nav-item__text" id="skillsLink">Skills</span></a>
+  </div>
+  <div class="nav-item">
+    <a [routerLink]="['/projects']"><i class="fas fa-code"></i><span class="nav-item__text" id="projectsLink">Projects</span></a>
+  </div>
+  <div class="nav-item">
+    <a [routerLink]="['/contact']"><i class="far fa-envelope"></i><span class="nav-item__text" id="contactLink">Contact</span></a>
+  </div>
+  <div class="social-links">
+    <a class="social-links__link" href="https://github.com/hannahgrinton" target="_blank"><i class="fab fa-github"></i></a>
+    <a class="social-links__link" href="https://www.linkedin.com/in/hannahgrinton" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a class="social-links__link" href="https://twitter.com/hannahgrinton" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a class="social-links__link" href="https://www.instagram.com/hannahgrinton.webdeveloper" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a class="social-links__link" href="https://www.facebook.com/hannahgrinton.webdeveloper" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a class="social-links__link" href="https://www.pinterest.ca/hannahgrinton/" target="_blank"><i class="fab fa-pinterest"></i></a>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
 <router-outlet></router-outlet>

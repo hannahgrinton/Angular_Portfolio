@@ -1,0 +1,165 @@
+<div class="content content--projects">
+  <div class="projects-title">Projects</div>
+  <div class="project">
+    <nav class="project__navigation">
+        <button (click)="switch('php')" class="project__navigation__link" [ngClass]="{'project__navigation__link--current' : php == true}">PHP & CMS</button>
+        <button (click)="switch('fullstack')" class="project__navigation__link" [ngClass]="{'project__navigation__link--current' : fullstack == true}">Full Stack</button>
+        <button (click)="switch('dotnetcore')" class="project__navigation__link" [ngClass]="{'project__navigation__link--current' : dotnetcore == true}">ASP.NET Core</button>
+        <button (click)="switch('vanillajs')" class="project__navigation__link" [ngClass]="{'project__navigation__link--current' : vanillajs == true}">Vanilla JS</button>
+    </nav>
+    <div class="project__content">
+        <div *ngIf="php" class="project__content__section" id="php" >
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/contactmanager.png"></div>
+                <div class="project__card__header">Contact Manager</div>
+                <div class="project__card__body">PHP CRUD app using custom MVC OOP framework and login sessions. <br>(U: "test" P: "password").</div>
+                <div class="project__card__links">
+                    <a href="https://github.com/hannahgrinton/ContactManager.git" target="_blank" class="card-links">Github</a>
+                    <a href="https://hannahgrinton.ca/contactmanager" target="_blank" class="card-links">Live Demo</a>
+                </div>
+            </div>
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/taskmanager.png"></div>
+                <div class="project__card__header">Task Manager</div>
+                <div class="project__card__body">PHP web app developed using HTML, Sass, JS, and jQuery front-end and a MVC OOP back-end.</div>
+                <div class="project__card__links">
+                    <a href=" https://github.com/hannahgrinton/taskmanager" target="_blank" class="card-links">Github</a>
+                    <a href="https://hannahgrinton.ca/taskManager" target="_blank" class="card-links">Live Demo</a>
+                </div>
+            </div>
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/halisi.png"></div>
+                <div class="project__card__header">Halisi Travel and Adventure</div>
+                <div class="project__card__body">WordPress site that allows users to book a trip with the company (Halisi Travel); includes child themes, plugins, custom PHP modifications, and custom CSS.</div>
+                <div class="project__card__links">
+                    <a href="https://github.com/hannahgrinton/Halisi-Travel" target="_blank" class="card-links">Github</a>
+                    <a href="https://halisitravel.com/" target="_blank" class="card-links">Live Demo</a>
+                </div>
+            </div>
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/resumebuilder.png"></div>
+                <div class="project__card__header">Résumé Builder</div>
+                <div class="project__card__body">Laravel app for creating custom résumés according to job applications.</div>
+                <div class="project__card__links">
+                    <a href="https://github.com/hannahgrinton/Resume-Builder" target="_blank" class="card-links">Github</a>
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Live Demo</a>
+                </div>
+            </div>
+        </div><!-- #php -->
+        <div *ngIf="fullstack" class="project__content__section" id="fullstack">
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/newage.png"></div>
+                <div class="project__card__header">New Age Architects</div>
+                <div class="project__card__body">Angular app that displays recent work; includes two image sliders and walkthrough videos. Served by Node/Express and uses Angular routing.</div>
+                <div class="project__card__links">
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Github</a>
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Live Demo</a>
+                </div>
+            </div>
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/techroster.png"></div>
+                <div class="project__card__header">Tech Roster</div>
+                <div class="project__card__body">Angular app that allows users to connect and interact with technologies and courses in a Mongo database, through connecting to a Node/Express server and RESTful API.</div>
+                <div class="project__card__links">
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Github</a>
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Live Demo</a>
+                </div>
+            </div>
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/photoviewer3.png"></div>
+                <div class="project__card__header">PhotoViewer</div>
+                <div class="project__card__body">Angular 7 version of the original JavaScript app, implements the same UI but fetches data from Node/Express server RESTful API, which connects with Mongo database.</div>
+                <div class="project__card__links">
+                    <a href="https://github.com/hannahgrinton/photoViewer" target="_blank" class="card-links">Github</a>
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Live Demo</a>
+                </div>
+            </div>
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/reactportfolio.png"></div>
+                <div class="project__card__header">React Portfolio</div>
+                <div class="project__card__body">Simple React portfolio site built from a <a href="https://www.youtube.com/watch?list=PL3KAvm6JMiowqFTXj3oPQkhP7aCgRHFTm&v=9AboneIxeM8" target="_blank" class="card-links">youtube tutorial</a>; uses React-MDL for design.</div>
+                <div class="project__card__links">
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Github</a>
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Live Demo</a>
+                </div>
+            </div>
+        </div><!-- #fullstack -->
+        <div *ngIf="dotnetcore" class="project__content__section" id="dotnetcore" style="padding-bottom: 120px;">
+            <div class="project__card">
+              <div class="project__card__image"><img src="../../assets/projects/homepage.png"></div>
+              <div class="project__card__header">HomePage</div>
+              <div class="project__card__body">.NET Core app for managing links. Change link URLs, names, categories, add new links, and rename categories. Uses google’s API to retrieve URL favicons.</div>
+              <div class="project__card__links">
+                  <a href="" target="_blank" class="card-links card-links--disabled" disabled>Github</a>
+                  <a href="" target="_blank" class="card-links card-links--disabled" disabled>Live Demo</a>
+              </div>
+            </div>
+            <div class="project__card">
+              <div class="project__card__image"><img src="../../assets/projects/TMFsite.png"></div>
+              <div class="project__card__header">TMF Revenue Manager</div>
+              <div class="project__card__body">A full server-side application using ASP.NET Core built for managing the revenue coming in from fundraising for the Truro Music Festival.</div>
+              <div class="project__card__links">
+                  <a href="https://github.com/hannahgrinton/Capstone-TMF" target="_blank" class="card-links">Github</a>
+                  <a href="http://fundraisingtmf.xyz/" target="_blank" class="card-links">Live Demo</a>
+              </div>
+            </div>
+            <div class="project__card">
+              <div class="project__card__image"><img src="../../assets/projects/CTPsite.png"></div>
+              <div class="project__card__header">CTP Bookstore & Admin</div>
+              <div class="project__card__body">.NET Core 3.1 site featuring a client-facing front-end and a private administrative GUI for content management.</div>
+              <div class="project__card__links">
+                  <a href="https://github.com/hannahgrinton/CTP" target="_blank" class="card-links">Github</a>
+                  <a href="http://christiantruthpublishing.com/" target="_blank" class="card-links">Live Demo</a>
+              </div>
+            </div>
+        </div><!-- #dotnetcore -->
+        <div *ngIf="vanillajs" class="project__content__section" id="vanillajs">
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/photoviewer1.png"></div>
+                <div class="project__card__header">PhotoViewer</div>
+                <div class="project__card__body">A responsive photo gallery implicating JavaScript & jQuery, Sass (BEM notation), Font Awesome, Spin.js, and AJAX requests for JSON.</div>
+                <div class="project__card__links">
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Github</a>
+                    <a href="https://hannahgrinton.ca/PhotoAlbum/" target="_blank" class="card-links">Live Demo</a>
+                </div>
+            </div>
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/weatherworks.png"></div>
+                <div class="project__card__header">WeatherWorks</div>
+                <div class="project__card__body">JS web app that displays Open Weather Map’s API XML data, stores your city in a cookie, and displays the corresponding Weather Icon.</div>
+                <div class="project__card__links">
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Github</a>
+                    <a href="https://hannahgrinton.ca/WeatherApp/" target="_blank" class="card-links">Live Demo</a>
+                </div>
+            </div>
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/webserver.png"></div>
+                <div class="project__card__header">Web Server Config</div>
+                <div class="project__card__body">Web server documentation app demonstrates CSS grid, Flex-box, handling links, placing images, and media queries.</div>
+                <div class="project__card__links">
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Github</a>
+                    <a href="https://hannahgrinton.ca/WebServerSite/" target="_blank" class="card-links">Live Demo</a>
+                </div>
+            </div>
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/reviewform.png"></div>
+                <div class="project__card__header">Review Form Example</div>
+                <div class="project__card__body">Online form demonstrating the latest form design trends and responsiveness.</div>
+                <div class="project__card__links">
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Github</a>
+                    <a href="https://hannahgrinton.ca/Form/" target="_blank" class="card-links">Live Demo</a>
+                </div>
+            </div>
+            <div class="project__card">
+                <div class="project__card__image"><img src="../../assets/projects/firstportfolio.jpeg"></div>
+                <div class="project__card__header">My First Portfolio</div>
+                <div class="project__card__body">Created before learning Javascript, CSS grid, and Flex-box, this 6-page site is purely static.</div>
+                <div class="project__card__links">
+                    <a href="" target="_blank" class="card-links card-links--disabled" disabled>Github</a>
+                    <a href="https://hannahgrinton.ca/Portfolio/index.html" target="_blank" class="card-links">Live Demo</a>
+                </div>
+            </div>
+        </div><!-- #vanillajs -->
+    </div><!-- .project__content -->
+</div><!-- .project -->
+</div>

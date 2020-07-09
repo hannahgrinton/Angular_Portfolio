@@ -1,0 +1,19 @@
+@import "../../_globals.scss";
+
+.home-logo {
+    width: 600px;
+}
+.content{
+    &--home {
+        @include display-flex();
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    &__body {
+        &--home {
+            font-family: $assistant;
+            font-size: 16px;
+        }
+    }
+
+}

@@ -1,0 +1,51 @@
+@import "../_globals.scss";
+.nav {
+    position: fixed;
+    top: 0;
+    background-color: $transparent-white;
+    height: 100%;
+    min-height: 500px;
+    width: 100px;
+    z-index: 1;
+    text-align: center;
+    @include display-flex();
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    &-item {
+        &-icon {
+            width: 100px;
+        }
+        i {
+            background: -webkit-gradient(linear, left top, left bottom, from($magenta), to($mauve));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 24px;
+            padding: 8px;
+        }
+        &__text {
+            display: none;
+            font-family: $assistant;
+            font-size: 18px;
+        }
+    }
+}
+.social-links {
+    padding-bottom: 10px;
+    justify-self: flex-end;
+    @include display-flex();
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    &__link {
+        i {
+            color: $magenta;
+            font-size: 16px;
+            padding: 5px;
+            &:hover {
+                color: $mauve;
+            }
+        }
+    }
+}

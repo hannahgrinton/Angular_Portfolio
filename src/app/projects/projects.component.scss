@@ -1,0 +1,108 @@
+@import "../../_globals.scss";
+
+.content--projects {
+    max-width: 1050px;
+    margin-left: 150px;
+    margin-top: 50px;
+    padding: 20px 0 0 20px;
+    background-color: $transparent-white;
+    border-radius: 10px;
+}
+.projects-title {
+    font-family: $nixie;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.project {
+    &__navigation {
+        margin-bottom: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        &__link {
+            font-family: $assistant;
+            font-size: 18px;
+            padding: 5px 10px 5px 10px;
+            margin: 0 !important;
+            text-decoration: none !important;
+            background-color: $sage;
+            border: 0;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            &--current {
+                background-color: $jade;
+            }
+            &:focus {
+                outline-width: 0;
+            }
+        }
+    }
+    &__content {
+        &__section {
+            @include display-flex();
+            margin-right: 20px;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+    }
+    &__card {
+        font-family: $assistant;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom: 20px; 
+        width: 240px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+        &__image {
+            z-index: 0;
+            img {
+                border-radius: 10px 10px 0 0;
+                height: 100px;
+                width: 240px;
+            }
+            
+        }
+        &__header {
+            z-index: 1;
+            background-color: white;
+            font-size: 20px;
+            padding-left: 10px;
+            color: black;
+            // border-top: 1px solid black;
+        }
+        &__body {
+            z-index: 1;
+            background-color: white;
+            padding-left: 10px;
+            font-size: 12px;
+            padding-right: 10px;
+            color: black;
+            height: 65px;
+            overflow: hidden;
+        }
+        &__links {
+            border-top: 1px solid black;
+            width: 100%;
+            align-self: center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}
+.card-links {
+    text-decoration: none;
+    color: black;
+    &--disabled {
+        color: rgb(92, 92, 92);
+        pointer-events: none;
+    }
+    &:hover {
+        color: $mauve;
+    }
+}

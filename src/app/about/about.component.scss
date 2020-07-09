@@ -1,0 +1,57 @@
+@import "../../_globals.scss";
+
+.about-portrait {
+    width: 250px;
+}
+.content{
+    &--about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 750px;
+        padding-left: 200px;
+        padding-top: 200px;
+    }
+    &__body {
+        &--about {
+            font-family: $assistant;
+            font-size: 16px;
+        }
+    }
+
+}
+.body-header {
+    font-family: $nixie;
+    font-size: 24px;
+}
+.body-paragraph {
+    margin-top: 20px;
+}
+.body-buttons {
+    max-width: 340px;
+    margin-top: 20px;
+    @include display-flex();
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.round-button {
+    height: 100px;
+    width: 100px;
+    background-color: $sage;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    @include display-flex();
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    
+    &__center-text {
+        font-family: $assistant;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        &:hover {
+            color: $jade;
+        }
+    }
+}
