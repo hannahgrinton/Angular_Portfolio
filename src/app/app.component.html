@@ -3,19 +3,19 @@
     <img src="assets/flower.png" class="nav-item-icon">
   </div>
   <div class="nav-item">
-    <a [routerLink]="['/home']"><i class="fas fa-home"></i><span class="nav-item__text" id="homeLink">Home</span></a>
+    <a [routerLink]="['/home']" (mouseenter)="changeHome(true)" (mouseleave)="changeHome(false)"><i *ngIf="homeIcon" class="fas fa-home"></i><span class="nav-item__text" id="homeLink" *ngIf="home">Home</span></a>
   </div>
   <div class="nav-item">
-    <a [routerLink]="['/about']"><i class="fas fa-user"></i><span class="nav-item__text" id="aboutLink">About</span></a>
+    <a [routerLink]="['/about']" (mouseenter)="changeAbout(true)" (mouseleave)="changeAbout(false)"><i *ngIf="aboutIcon" class="fas fa-user"></i><span class="nav-item__text" id="aboutLink" *ngIf="about">About</span></a>
   </div>
   <div class="nav-item">
-    <a [routerLink]="['/skills']"><i class="fas fa-code-branch"></i><span class="nav-item__text" id="skillsLink">Skills</span></a>
+    <a [routerLink]="['/skills']" (mouseenter)="changeSkills(true)" (mouseleave)="changeSkills(false)"><i *ngIf="skillsIcon" class="fas fa-code-branch"></i><span class="nav-item__text" id="skillsLink" *ngIf="skills">Skills</span></a>
   </div>
   <div class="nav-item">
-    <a [routerLink]="['/projects']"><i class="fas fa-code"></i><span class="nav-item__text" id="projectsLink">Projects</span></a>
+    <a [routerLink]="['/projects']" (mouseenter)="changeProjects(true)" (mouseleave)="changeProjects(false)"><i *ngIf="projectsIcon" class="fas fa-code"></i><span class="nav-item__text" id="projectsLink" *ngIf="projects">Projects</span></a>
   </div>
   <div class="nav-item">
-    <a [routerLink]="['/contact']"><i class="far fa-envelope"></i><span class="nav-item__text" id="contactLink">Contact</span></a>
+    <a [routerLink]="['/contact']" (mouseenter)="changeContact(true)" (mouseleave)="changeContact(false)"><i *ngIf="contactIcon" class="far fa-envelope"></i><span class="nav-item__text" id="contactLink" *ngIf="contact">Contact</span></a>
   </div>
   <div class="social-links">
     <a class="social-links__link" href="https://github.com/hannahgrinton" target="_blank"><i class="fab fa-github"></i></a>

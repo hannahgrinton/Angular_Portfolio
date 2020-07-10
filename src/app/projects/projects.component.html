@@ -6,6 +6,7 @@
         <button (click)="switch('fullstack')" class="project__navigation__link" [ngClass]="{'project__navigation__link--current' : fullstack == true}">Full Stack</button>
         <button (click)="switch('dotnetcore')" class="project__navigation__link" [ngClass]="{'project__navigation__link--current' : dotnetcore == true}">ASP.NET Core</button>
         <button (click)="switch('vanillajs')" class="project__navigation__link" [ngClass]="{'project__navigation__link--current' : vanillajs == true}">Vanilla JS</button>
+        <button (click)="switch('design')" class="project__navigation__link" [ngClass]="{'project__navigation__link--current' : design == true}">Design</button>
     </nav>
     <div class="project__content">
         <div *ngIf="php" class="project__content__section" id="php" >
@@ -45,6 +46,15 @@
                     <a href="" target="_blank" class="card-links card-links--disabled" disabled>Live Demo</a>
                 </div>
             </div>
+            <div class="project__card">
+              <div class="project__card__image"><img src="../../assets/projects/wordpressportfolio.png"></div>
+              <div class="project__card__header">WordPress Portfolio</div>
+              <div class="project__card__body">Portfolio site developed on a custom wordpress build, featuring a custom mobile-responsive theme.</div>
+              <div class="project__card__links">
+                  <a href="https://github.com/hannahgrinton/custom-wordpress-theme" target="_blank" class="card-links">Github</a>
+                  <a href="" target="_blank" class="card-links card-links--disabled" disabled>Live Demo</a>
+              </div>
+          </div>
         </div><!-- #php -->
         <div *ngIf="fullstack" class="project__content__section" id="fullstack">
             <div class="project__card">
@@ -83,6 +93,15 @@
                     <a href="" target="_blank" class="card-links card-links--disabled" disabled>Live Demo</a>
                 </div>
             </div>
+            <div class="project__card">
+              <div class="project__card__image"><img src="../../assets/projects/angularportfolio.png"></div>
+              <div class="project__card__header">Angular Portfolio</div>
+              <div class="project__card__body">This website was built using Angular 7 and Sass, with custom logo designs.</div>
+              <div class="project__card__links">
+                  <a href="https://github.com/hannahgrinton/Angular_Portfolio" target="_blank" class="card-links">Github</a>
+                  <a href="" target="_blank" class="card-links card-links--disabled" disabled>Live Demo</a>
+              </div>
+          </div>
         </div><!-- #fullstack -->
         <div *ngIf="dotnetcore" class="project__content__section" id="dotnetcore" style="padding-bottom: 120px;">
             <div class="project__card">
@@ -160,6 +179,26 @@
                 </div>
             </div>
         </div><!-- #vanillajs -->
+        <div *ngIf="design" class="project__content__section" id="design">
+          <div class="project__card">
+            <div class="project__card__image"><img src="../../assets/projects/techairohio.png"></div>
+            <div class="project__card__header">Tech Air Ohio Logos</div>
+            <div class="project__card__body">Designed logo set for client, and made some minor fixes/adjustments to their WordPress site.</div>
+            <div class="project__card__links">
+                <a href="" target="_blank" class="card-links card-links--disabled" disabled>Github</a>
+                <a href="http://techairohio.com/" target="_blank" class="card-links">Live Demo</a>
+            </div>
+          </div>
+          <div class="project__card">
+            <div class="project__card__image"><img src="../../assets/projects/brandkit.png"></div>
+            <div class="project__card__header">Hannah Grinton Logos</div>
+            <div class="project__card__body">Designed my own logos and brand kit for my portfolio rebuild.</div>
+            <div class="project__card__links">
+                <a href="" target="_blank" class="card-links card-links--disabled" disabled>Github</a>
+                <a href="" target="_blank" class="card-links card-links--disabled" disabled>Live Demo</a>
+            </div>
+          </div>
+        </div>
     </div><!-- .project__content -->
 </div><!-- .project -->
 </div>

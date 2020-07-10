@@ -14,7 +14,17 @@
     justify-content: space-between;
     &-item {
         &-icon {
+            // flower icon
             width: 100px;
+        }
+        a {
+            text-decoration: none;
+            @include display-flex();
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 30px;
         }
         i {
             background: -webkit-gradient(linear, left top, left bottom, from($magenta), to($mauve));
@@ -22,12 +32,11 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: 24px;
-            padding: 8px;
         }
         &__text {
-            display: none;
             font-family: $assistant;
-            font-size: 18px;
+            font-size: 16px;
+            color: $mauve;
         }
     }
 }

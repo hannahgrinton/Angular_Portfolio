@@ -15,6 +15,7 @@ export class ProjectsComponent implements OnInit {
   fullstack = false;
   dotnetcore = false;
   vanillajs = false;
+  design = false;
 
   switch(block) {
     if (block == "php") {
@@ -23,6 +24,7 @@ export class ProjectsComponent implements OnInit {
         this.fullstack = false;
         this.dotnetcore = false;
         this.vanillajs = false;
+        this.design = false;
       }
     } else if (block == "fullstack") {
       if (!this.fullstack) {
@@ -30,6 +32,7 @@ export class ProjectsComponent implements OnInit {
         this.fullstack = true;
         this.dotnetcore = false;
         this.vanillajs = false;
+        this.design = false;
       }
     } else if (block == "dotnetcore") {
       if (!this.dotnetcore) {
@@ -37,13 +40,23 @@ export class ProjectsComponent implements OnInit {
         this.fullstack = false;
         this.dotnetcore = true;
         this.vanillajs = false;
+        this.design = false;
       }
-    }else if (block == "vanillajs") {
+    } else if (block == "vanillajs") {
       if (!this.vanillajs) {
         this.php = false;
         this.fullstack = false;
         this.dotnetcore = false;
         this.vanillajs = true;
+        this.design = false;
+      }
+    } else if (block == "design") {
+      if (!this.design) {
+        this.php = false;
+        this.fullstack = false;
+        this.dotnetcore = false;
+        this.vanillajs = false;
+        this.design = true;
       }
     }
   }
