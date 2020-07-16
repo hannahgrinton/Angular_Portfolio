@@ -1,1 +1,138 @@
 @import "../../_globals.scss";
+
+.content--contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1050px;
+    font-family: $assistant;
+    margin-left: 150px;
+    margin-top: 50px;
+    padding: 20px 0 20px 20px;
+    background-color: $transparent-white;
+    border-radius: 10px;
+}
+.body-header {
+    font-family: $nixie;
+    font-size: 24px;
+}
+.info {
+    &__list {
+        margin-left: 10px;
+        margin-top: 20px;
+        max-width: 400px;
+        margin-bottom: 40px;
+        &__item {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+    }
+}
+.contact-link {
+    color: $magenta;
+    text-decoration: none;
+    &:hover {
+        color: $mauve;
+    }
+}
+.social-buttons {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 200px;
+}
+.round-button {
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: $sage;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    @include display-flex();
+    flex-flow: column nowrap;
+    justify-content: center;
+    &__center-text {
+        font-family: $assistant;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    &:hover {
+        background-color: $jade;
+    }
+}
+.form {
+    margin-top: 20px;
+    margin-left: 10px;
+    &__label {
+        padding-bottom: 5px; 
+    }
+    &__textbox {
+        padding: 0 5px 0 5px;
+        width: 150px;
+        height: 30px;
+        border: 1px solid $cotton;
+        border-radius: 10px;
+        background-color: $white;
+        font-family: $assistant;
+        margin-bottom: 5px;
+        &:focus {
+            outline-width: 0;
+        }
+    }
+    &__textarea {
+        padding: 0 5px 0 5px;
+        width: 320px;
+        height: 90px;
+        border: 1px solid $cotton;
+        border-radius: 10px;
+        background-color: $white;
+        font-family: $assistant;
+        &:focus {
+            outline-width: 0;
+        }
+    }
+    &__button {
+        border: 0;
+        min-height: 25px;
+        margin-right: 3px;
+        border-radius: 5px;
+        min-width: 30px;
+        font-size: 12px;
+        padding: 7px;
+        margin-top: 5px;
+        margin-bottom: 0;
+        cursor: pointer;
+        &:focus {
+            outline-width: 0;
+        }
+        &--cancel {
+            background-color: $cotton;
+            color: $magenta;
+            &:hover {
+                background-color: $mauve;
+                color: $white;
+            }
+        }
+        &--submit {
+            background-color: $mauve;
+            color: white;
+            &:hover {
+                background-color: $magenta;
+                color: $cotton;
+            }
+        }
+    }
+
+}
+.disabled {
+    background-color: #705967;
+    color: #c4bec2;
+    cursor: default;
+    pointer-events: none;
+}
+.info {
+    margin-top: 10px;
+}

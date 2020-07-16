@@ -43,15 +43,13 @@
     @include display-flex();
     flex-flow: column nowrap;
     justify-content: center;
-
-    
     &__center-text {
         font-family: $assistant;
         color: white;
         text-decoration: none;
         font-size: 18px;
-        &:hover {
-            color: $jade;
-        }
+    }
+    &:hover {
+        background-color: $jade;
     }
 }

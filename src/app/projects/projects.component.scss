@@ -34,6 +34,9 @@
             &--current {
                 background-color: $jade;
             }
+            &:hover {
+                background-color: $jade;
+            }
             &:focus {
                 outline-width: 0;
             }
