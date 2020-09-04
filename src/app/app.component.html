@@ -1,5 +1,5 @@
 <div class="nav">
-  <div class="nav-item">
+  <div class="nav-item nav-item--start">
     <img src="assets/flower.png" class="nav-item-icon">
   </div>
   <div class="nav-item">
@@ -14,7 +14,7 @@
   <div class="nav-item">
     <a [routerLink]="['/projects']" (mouseenter)="changeProjects(true)" (mouseleave)="changeProjects(false)"><i *ngIf="projectsIcon" class="fas fa-code"></i><span class="nav-item__text" id="projectsLink" *ngIf="projects">Projects</span></a>
   </div>
-  <div class="nav-item">
+  <div class="nav-item nav-item--end">
     <a [routerLink]="['/contact']" (mouseenter)="changeContact(true)" (mouseleave)="changeContact(false)"><i *ngIf="contactIcon" class="far fa-envelope"></i><span class="nav-item__text" id="contactLink" *ngIf="contact">Contact</span></a>
   </div>
   <div class="social-links">

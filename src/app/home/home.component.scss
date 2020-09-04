@@ -17,3 +17,29 @@
     }
 
 }
+@media screen and (max-width: $large-screen) {
+    .content {
+        &--home {
+            margin-top: +200px;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .home-logo {
+        width: 100%;
+    }
+}
+@media screen and (max-width: $small-screen) {
+    .content {
+        &--home {
+            margin-top: +20px;
+        }
+        &__body {
+            &--home {
+                font-family: $assistant;
+                font-size: 10px;
+                padding: 10px;
+            }
+        }
+    }
+}
